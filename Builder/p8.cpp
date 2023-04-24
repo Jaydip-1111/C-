@@ -90,7 +90,7 @@ int main()
             cout << "Enter Your password : ";
             cin >> password;
 
-            if (user_id == "rachit parmar" && password == "@rachit")
+            if (user_id == "makwana jaydip" && password == "@jaydip")
             {
                 cout << "Successfully log in as a Administrator" << endl;
             }
