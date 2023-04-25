@@ -3,13 +3,13 @@
 using namespace std;
 #define PI 3.14
 float area(float r){
-      return PI*r*r;
+      return PI * r * r;
 }
 float area(float l,float h){
-      return l*h;
+      return l * h;
 }
 float area(float l,float h,float b){
-    return l*h*b;
+    return l * h * b;
 }
 int main(){
             int no;
