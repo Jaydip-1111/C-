@@ -1,30 +1,33 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-class xyz{
-           int a,b;
-           public:
-               xyz(){
-                   cout<<"Enter A:-";
-                   cin>>a;
-               }
-               void operator ++(){
-                 ++a;
-               }
-               void operator --(){
-                --b;
-               }
-               void disp(){
-                cout<<"a is:-"<<a<<endl;
-               }
-               void abc(){
-                cout<<"b is:-"<<b;
-               }
+
+class Counter {
+private:
+    int count;
+public:
+    Counter() : count(2) {}
+
+    void operator++() {
+        count++;
+    }
+
+    void operator--() {
+        count--;
+    }
+
+    void display() {
+     cout << "Count: " << count << std::endl;
+    }
 };
-int main(){
-            xyz x1;
-            ++x1;
-            --x1;
-            x1.disp();
-            x1.abc();
-            return 0;
+
+int main() {
+    Counter c;
+
+    ++c;
+    c.display();
+
+    --c;
+    c.display();
+
+    return 0;
 }
